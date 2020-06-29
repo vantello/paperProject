@@ -9,17 +9,17 @@
 <nav class="navbar navbar-expand-md" id="mainMenu">
     <div class="navbar-collapse collapse pt-2 pt-md-0" id="navbar2">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
+            <li class="nav-item mr-2">
                 <a class="nav-link" href="#">OPINIÓN</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-2">
                 <a class="nav-link" href="#">DEBATE</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mr-2">
                 <a class="nav-link" href="#">ENTREVISTAS</a>
             </li>
             <li>
-              <a class="nav-link" href="#">MÚSICA</a>
+              <a class="nav-link mr-2" href="#">MÚSICA</a>
             </li>
             <li>
               <a class="nav-link" [routerLink]="[ '/menu-component' ]">COLABORADORES</a>
@@ -28,37 +28,29 @@
         <ul class="navbar-nav d-flex mt-2 mt-lg-0">
           <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="../../assets/icons/facebook.svg" alt="" width="25" height="25">
+                <img src="../../assets/icons/facebook.svg" class="facebook" alt="Facebook logo" width="25" height="25">
               </a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="../../assets/icons/instagram.svg" alt="Instagram Logo" width="25" height="25">
+                <img src="../../assets/icons/instagram.svg" class="instagram" alt="Instagram Logo" width="25" height="25">
               </a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">
-                <img src="../../assets/icons/youtube.svg" alt="Youtube Logo" width="25" height="25">
+                <img src="../../assets/icons/youtube.svg" class="youtube" alt="Youtube Logo" width="25" height="25">
               </a>
           </li>
           <li>
             <a class="nav-link" href="#">
-              <img src="../../assets/icons/twitter.svg" alt="Twitter Logo" width="25" height="25">
+              <img src="../../assets/icons/twitter.svg" class="twitter" alt="Twitter Logo" width="25" height="25">
             </a>
           </li>
       </ul>
-      <!-- <form class="form-inline d-flex justify-content-center form-sm">
-        <input class="form-control form-control-sm" type="text" placeholder="Search"
-          aria-label="Search">
-          <a href="#">
-            <img src="../../assets/icons/search.svg" class="ml-2" alt="Search logo" width="25" height="25">
-          </a>
-      </form> -->
-      
-      <img src="../../assets/icons/search.svg" alt="Search Logo" width="25" height="25" data-toggle="modal" data-target=".bd-example-modal-lg">
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <img src="../../assets/icons/search.svg" class="search" alt="Search Logo" width="25" height="25" data-toggle="modal" data-target=".bd-example-modal-lg"> 
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="searcher" aria-hidden="true">
         <div class="modal-dialog modal-xl absolute-center">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <button type="button" class="close mb-2" data-dismiss="modal" aria-hidden="true">x</button>
           <div class="modal-content">
               <form action="" class="mt-5 mb-3 ml-2">
                 <input type="text" class="ml-3 mb-3" placeholder="Buscar ...">

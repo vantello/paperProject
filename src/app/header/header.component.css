@@ -1,6 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One&display=swap");
+img.search:hover {
+  content: url(../../assets/icons/search-white.svg);
+}
+
+img.facebook:hover {
+  content: url(../../assets/icons/facebook-white.svg);
+}
+
+img.instagram:hover {
+  content: url(../../assets/icons/instagram-white.svg);
+}
+
+img.youtube:hover {
+  content: url(../../assets/icons/youtube-white.svg);
+}
+
+img.twitter:hover {
+  content: url(../../assets/icons/twitter-white.svg);
+}
+
+.navbar-toggler-icon {
+  background-image: url(../../assets/icons/toggler-tomato.svg);
+}
+
 #logo {
   background-color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#logo a {
+  text-decoration: none;
 }
 
 #logo h1 {
@@ -38,6 +70,10 @@
   bottom: 0;
   right: 0;
   /* Set the bounds in which to center it, relative to its parent/container */
+}
+
+.close {
+  color: white;
 }
 
 input[type="text"],

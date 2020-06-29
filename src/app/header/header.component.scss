@@ -1,8 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
 
+// ICONS
+img.search:hover {
+  content: url(../../assets/icons/search-white.svg);
+}
+img.facebook:hover{
+  content: url(../../assets/icons/facebook-white.svg);
+}
+img.instagram:hover{
+  content: url(../../assets/icons/instagram-white.svg);
+}
+img.youtube:hover{
+  content: url(../../assets/icons/youtube-white.svg);
+}
+img.twitter:hover{
+  content: url(../../assets/icons/twitter-white.svg);
+}
+
+// BURGUER COLLAPSE
+.navbar-toggler-icon {
+  background-image: url(../../assets/icons/toggler-tomato.svg);
+}
 
 #logo{
     background-color:black;
+    user-select: none;
+    a{
+      text-decoration: none;
+    }
     h1{
         font-family: 'Kumar One', cursive;
         color:tomato;
@@ -29,8 +54,11 @@
     position: absolute; /* Break it out of the regular flow */
     top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
   }
+.close{
+  color: white;
+}
 
-  // INPUT TEXT STYLE
+// INPUT TEXT STYLE
 input[type="text"],
 select.form-control {
   background: transparent;
