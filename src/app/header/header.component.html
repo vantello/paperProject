@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-md fixed-top-sm justify-content-start flex-nowrap text-center" id="logo">
+    <button class="navbar-toggler navbar-toggler-left navbar-dark mr-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <a [routerLink]="[ '/' ]">
       <h1 class="mt-3">3 ZERO 5</h1>
     </a>
-    <button class="navbar-toggler navbar-dark ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 </nav>
 <nav class="navbar navbar-expand-md" id="mainMenu">
-    <div class="navbar-collapse collapse pt-2 pt-md-0" id="navbar2">
+    <div class="navbar-collapse collapse text-center pt-2 pt-md-0" id="navbar2">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item mr-2">
                 <a class="nav-link" href="#">OPINIÓN</a>
@@ -25,24 +25,24 @@
               <a class="nav-link" [routerLink]="[ '/menu-component' ]">COLABORADORES</a>
             </li>
         </ul>
-        <ul class="navbar-nav d-flex mt-2 mt-lg-0">
-          <li class="nav-item">
+        <ul class="navbar-nav d-flex flex-row justify-content-center mt-2 mt-lg-0">
+          <li class="nav-item mr-2">
               <a class="nav-link" href="#">
                 <img src="../../assets/icons/facebook.svg" class="facebook" alt="Facebook logo" width="25" height="25">
               </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-2">
               <a class="nav-link" href="#">
                 <img src="../../assets/icons/instagram.svg" class="instagram" alt="Instagram Logo" width="25" height="25">
               </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mr-2">
               <a class="nav-link" href="#">
                 <img src="../../assets/icons/youtube.svg" class="youtube" alt="Youtube Logo" width="25" height="25">
               </a>
           </li>
           <li>
-            <a class="nav-link" href="#">
+            <a class="nav-link mr-2" href="#">
               <img src="../../assets/icons/twitter.svg" class="twitter" alt="Twitter Logo" width="25" height="25">
             </a>
           </li>
