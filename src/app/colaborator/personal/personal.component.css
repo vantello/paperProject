@@ -17,4 +17,9 @@ p {
 a {
   border: 2px solid black;
 }
+
+a:hover {
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=personal.component.css.map */

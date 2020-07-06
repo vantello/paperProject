@@ -1,2 +1,28 @@
-<app-menu></app-menu>
-<p>article works!</p>
+<div class="row">
+    <div class="col-3">
+        <app-menu></app-menu>
+    </div>
+    <div class="col-9 mt-5">
+        <h2>PUBLICAR ARTÍCULO</h2>
+        <p class="mb-5 ml-3">Escribe el título y el cuerpo del artículo:</p>
+        <form action="">
+            <div class="group">
+                <input type="text" id="titulo" required>
+                <span class="bar"></span>
+                <label class="titulo" for="titulo">TÍTULO</label>
+            </div>
+            <div class="group mt-5">
+                <input type="text" id="titulo" required>
+                <span class="bar"></span>
+                <label class="titulo" for="titulo">SUBTÍTULO</label>
+            </div>
+            <div class="group mt-5">
+                <!-- <input type="text" id="texto" required> -->
+                <span class="textarea" id="textarea" role="textbox" contenteditable></span>
+                <span class="bar"></span>
+                <label class="texto" for="texto">CUERPO</label>
+            </div> 
+        </form>
+    </div>
+</div>
+
