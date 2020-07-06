@@ -1,3 +1,30 @@
-#mainMenu {
-    display: none;
+@import '../../colors.scss';
+@import '../../fonts.scss';
+
+
+
+$navbar-width: 230px; // ample sidebar
+
+.navbar-vertical{
+  background-color: black;
+  width: $navbar-width;
+  height: 100vh;
+  padding: 0.1em 1em;
+    h3{
+      color: white;
+      font-family: $abel;
+    }
+    ul li a{
+      font-family: $abel;
+      text-transform: uppercase;
+      font-size: 1.1em;
+      color: white; 
+      &:hover{
+        color: $complementary;
+      } 
+    }
 }
+
+
+    
+    

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumar+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 img.search:hover {
   content: url(../../assets/icons/search-white.svg);
 }
@@ -45,6 +47,8 @@ img.twitter:hover {
 }
 
 #mainMenu ul li a {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.1em;
   color: black;
   text-decoration: none;
 }

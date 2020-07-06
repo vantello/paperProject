@@ -13,10 +13,10 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    var mainMenu = document.getElementById("mainMenu");
-    if(this.router.url === '/menu-component'){
-      mainMenu.style.display = "none";
-    }
+    // var mainMenu = document.getElementById("mainMenu");
+    // if(this.router.url === '/menu-component'){
+    //   mainMenu.style.display = "none";
+    // }
   }
 
 }

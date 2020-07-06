@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+h2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+h4 {
+  font-family: "Bebas Neue", cursive;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  border: 2px solid black;
+}
+/*# sourceMappingURL=personal.component.css.map */

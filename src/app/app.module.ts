@@ -5,13 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './colaborator/menu/menu.component';
+import { HouseComponent } from './colaborator/house/house.component';
+import { ArticleComponent } from './colaborator/article/article.component';
+import { PersonalComponent } from './colaborator/personal/personal.component';
+import { MusicListComponent } from './colaborator/music-list/music-list.component';
+import { OpinionComponent } from './colaborator/opinion/opinion.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    HouseComponent,
+    ArticleComponent,
+    PersonalComponent,
+    MusicListComponent,
+    OpinionComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@import '../colors.scss';
+
 
 // ICONS
 img.search:hover {
@@ -30,13 +35,16 @@ img.twitter:hover{
     }
     h1{
         font-family: 'Kumar One', cursive;
-        color:tomato;
+        color: $complementary;
     }
 }
 
 #mainMenu{
-    background-color:tomato;
+    background-color:$complementary;
     ul li a{
+      //font-family: 'Roboto', sans-serif;
+      font-family: 'Abel', sans-serif;
+      font-size: 1.1em;
         color:black;
         text-decoration: none;
     }
