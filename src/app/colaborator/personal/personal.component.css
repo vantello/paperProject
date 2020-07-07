@@ -139,6 +139,8 @@ h4 {
 
 .modal button.btn {
   border: 2px solid black;
+  display: block;
+  width: 100%;
 }
 
 .modal button.btn:hover {
