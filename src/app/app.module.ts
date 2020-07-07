@@ -10,6 +10,7 @@ import { ArticleComponent } from './colaborator/article/article.component';
 import { PersonalComponent } from './colaborator/personal/personal.component';
 import { MusicListComponent } from './colaborator/music-list/music-list.component';
 import { OpinionComponent } from './colaborator/opinion/opinion.component';
+import { InterviewComponent } from './colaborator/interview/interview.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { OpinionComponent } from './colaborator/opinion/opinion.component';
     ArticleComponent,
     PersonalComponent,
     MusicListComponent,
-    OpinionComponent
+    OpinionComponent,
+    InterviewComponent
   ],
   imports: [
     BrowserModule,

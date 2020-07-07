@@ -43,7 +43,7 @@ input:focus, .textarea:focus {
 /* LABEL ======================================= */
 label {
   color: #999;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -58,7 +58,7 @@ label {
 input:focus ~ label, input:valid ~ label,
 .textarea:focus ~ label, .textarea:valid ~ label {
   top: -20px;
-  font-size: 14px;
+  font-size: 10px;
   color: tomato;
 }
 

@@ -6,14 +6,34 @@ h2{
 h4{
     font-family: $bebas;
 }
-p{
-    font-family: $text-font;
-}
-
-a{
-    border: 2px solid black;
-    &:hover{
-        background-color: black;
-        color: white;
+.infoBlock{
+    border: 4px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    span{
+        text-transform: uppercase; 
+        margin-left: 0.5em; 
+    }
+    p{
+        margin: 1.5em;
+        font-family: $text-font;
+    }
+    a{
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        margin-bottom: 15px;
+        border: 2px solid black;
+        font-family: $text-font;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
     }
 }

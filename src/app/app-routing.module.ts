@@ -6,7 +6,7 @@ import { ArticleComponent } from './colaborator/article/article.component';
 import { OpinionComponent } from './colaborator/opinion/opinion.component';
 import { MusicListComponent } from './colaborator/music-list/music-list.component';
 import { PersonalComponent } from './colaborator/personal/personal.component';
-
+import { InterviewComponent } from './colaborator/interview/interview.component';
 
 const routes: Routes = [
   { path: "header", component: HeaderComponent },
@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: "colaborator/article", component: ArticleComponent},
   { path: "colaborator/musicList", component: MusicListComponent},
   { path: "colaborator/opinion", component: OpinionComponent},
+  { path: "colaborator/interview", component: InterviewComponent}
 
 ];
 
