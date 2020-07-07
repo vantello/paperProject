@@ -1,4 +1,5 @@
-@import '../../fonts.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/forms.scss';
 
 h2{
   font-family: $bebas;
@@ -11,78 +12,4 @@ p{
 }
 #textarea{
   font-family: $text-font;
-}
-/* form starting stylings ------------------------------- */
-.group 			  { 
-  position:relative; 
-}
-input, .textarea{
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
-  border:none;
-  border-bottom:1px solid #757575;
-  &:focus{
-    outline: none;
-  }
-}
-
-.textarea{
-  width: 600px !important;
-}
-
-/* LABEL ======================================= */
-label{
-  color:#999; 
-  font-size:12px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-
-/* active state */
-input:focus ~ label, input:valid ~ label, 
-.textarea:focus ~ label, .textarea:valid ~label{
-  top:-20px;
-  font-size:10px;
-  color:tomato;
-}
-
-/* BOTTOM BARS ================================= */
-.bar{
-  position:relative; 
-  display:block; 
-  width:300px; 
-}
-.textarea + .bar{
-  width: 600px !important;
-}
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:black; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-}
-
-/* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after,
-.textarea:focus ~ .bar:before, .textarea:focus ~ .bar:after{
-  width:50%;
 }

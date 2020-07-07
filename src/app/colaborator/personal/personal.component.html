@@ -15,19 +15,19 @@
                         <img src="../../assets/icons/personal/name.svg" class="nameSurname" alt="Name icon">
                         <span><strong>Nombre</strong></span>
                         <p>Tracy Mcgrady</p>
-                        <a class="btn" href="#">Cambiar nombre</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalName">Modificar</a>
                     </div>
                     <div class="infoBlock col-sm-6 col-md-6 col-lg-3">
                         <img src="../../assets/icons/personal/email.svg" class="email" alt="Email icon" >
                         <span><strong>Email</strong></span>
                         <p>tmac@gmail.com</p>
-                        <a class="btn" href="#">Cambiar email</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalEmail">Modificar</a>
                     </div>
                     <div class="infoBlock col-sm-6 col-md-6 col-lg-3">
                         <img src="../../assets/icons/personal/password.svg" class="password" alt="Password icon" >
                         <span><strong>Contraseña</strong></span>
                         <p>t-macdabest</p>
-                        <a class="btn" href="#">Cambiar contraseña</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalPassword">Modificar</a>
                     </div>
                 </div>
                 <div class="mb-3 row">
@@ -35,19 +35,175 @@
                         <img src="../../assets/icons/twitter.svg" class="twitter" alt="Twitter logo" >
                         <span><strong>Twitter</strong></span>
                         <p>@tmacdabest</p>
-                        <a class="btn" href="#">Cambiar cuenta</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalTwitter">Modificar</a>
                     </div>
                     <div class="infoBlock col-sm-6 col-md-6 col-lg-3">
                         <img src="../../assets/icons/personal/web.svg" class="website" alt="Web icon" >
                         <span><strong>Web</strong></span>
                         <p>www.tmacdabest.com</p>
-                        <a class="btn" href="#">Cambiar web</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalWeb">Modificar</a>
                     </div>
                     <div class="infoBlock col-sm-6 col-md-6 col-lg-3">
                         <img src="../../assets/icons/personal/description.svg" class="description" alt="Description icon" >
                         <span><strong>Descripción</strong></span>
                         <p>Artista de la canasta</p>
-                        <a class="btn" href="#">Cambiar descripción</a>
+                        <a class="btn" data-toggle="modal" data-target="#modalDescription">Modificar</a>
+                    </div>
+                </div>
+
+
+                <!-- MODALS------------------------------------------------------------------------- -->
+                <!-- MODAL NAME -->
+                <div class="modal" id="modalName" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar nombre y apellidos</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="newName" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newName">Nombre</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" id="newSurname" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newSurname">Apellidos</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL EMAIL -->
+                <div class="modal" id="modalEmail" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar email</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="newEmail" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newEmail">Email</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL PASSWORD -->
+                <div class="modal" id="modalPassword" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar contraseña</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="oldPass" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="oldPass">Antigua contraseña</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" id="newPass" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newPass">Nueva contraseña</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" id="rePass" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="rePass">Repite la contraseña</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL TWITTER -->
+                <div class="modal" id="modalTwitter" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar cuenta de Twitter</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="newTwitter" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newTwitter">Twitter: </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL WEB -->
+                <div class="modal" id="modalWeb" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar Web</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="newWeb" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newWeb">Web: </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MODAL DESCRIPTION -->
+                <div class="modal" id="modalDescription" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Modificar descripción</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="group">
+                                        <input type="text" id="newDescription" required>
+                                        <span class="bar"></span>
+                                        <label class="" for="newDescription">Descripción: </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn">Guardar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>  

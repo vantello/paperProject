@@ -1,4 +1,6 @@
-@import '../../fonts.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/forms.scss';
+@import '../../styles/colors.scss';
 
 h2{
      font-family: $bebas;
@@ -36,4 +38,29 @@ h4{
             color: white;
         }
     }
+}
+.modal{
+    form{
+        margin-left: 20px;
+    }
+   label{
+    display: inline-block;
+    width: 150px;
+   } 
+   button{
+       &.btn{
+        border: 2px solid black;
+        &:hover{
+            color:white;
+            background-color: black;
+        }
+       }  
+   }
+   .group{
+       margin-top: 10px;
+       margin-bottom: 20px;
+   }
+   .modal-header, .modal-body, .modal-footer{
+       border: none;
+   }
 }
