@@ -149,11 +149,20 @@ h4 {
 }
 
 .modal .group {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .modal .modal-header, .modal .modal-body, .modal .modal-footer {
   border: none;
+}
+
+.modal a {
+  text-decoration: none;
+  color: black;
+}
+
+.modal a:hover {
+  color: tomato;
 }
 /*# sourceMappingURL=personal.component.css.map */

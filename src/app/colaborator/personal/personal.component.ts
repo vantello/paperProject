@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalComponent implements OnInit {
 
-  constructor() { }
+    
 
-  ngOnInit(): void {
+  constructor() { 
   }
 
+  ngOnInit(): void {}
 }

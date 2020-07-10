@@ -1,2 +1,27 @@
-<app-menu></app-menu>
-<p>music-list works!</p>
+<div class="row">
+    <div class="col-3">
+        <app-menu></app-menu>
+    </div>
+    <div class="col-9 mt-5">
+        <h2>LETRAS MUSICALES</h2>
+        <p class="mb-5 ml-3">Escribe el título, adjunta la url y acompañalo de un texto:</p>
+        <form action="" class="ml-3">
+            <div class="group">
+                <input type="text" id="titulo" required>
+                <span class="bar"></span>
+                <label class="titulo" for="titulo">TÍTULO</label>
+            </div>
+            <div class="group mt-5">
+                <input type="text" id="subtitulo" required>
+                <span class="bar"></span>
+                <label class="subtitulo" for="subtitulo">URL DE LA LISTA MUSICAL</label>
+            </div>
+            <div class="group mt-5">
+                <!-- <input type="text" id="texto" required> -->
+                <span class="textarea" id="textarea" role="textbox" contenteditable></span>
+                <span class="bar"></span>
+                <label class="texto" for="texto">TEXTO QUE ACOMPAÑA LA LISTA MUSICAL</label>
+            </div> 
+        </form>
+    </div>
+</div>

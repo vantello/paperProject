@@ -1,1 +1,26 @@
-<p>interview works!</p>
+<div class="row">
+    <div class="col-3">
+        <app-menu></app-menu>
+    </div>
+    <div class="col-9 mt-5">
+        <h2>ENTREVISTA</h2>
+        <p class="mb-5 ml-3">Inserta las preguntas y respuestas para conformar tu entrevista:</p>
+        <div id="fullInterview">
+            <!-- <p>{{question}}</p>
+            <p>{{answer}}</p> -->
+        </div>
+        <form action="" class="ml-3" [formGroup]="formInterview" (ngSubmit)="submit()">
+            <div class="group mt-5">
+                <input class="textarea" role="textbox" formControlName="question">
+                <span class="bar"></span>
+                <label class="texto" for="texto">PREGUNTA</label>
+            </div>
+            <div class="group mt-5">
+                <input class="textarea" role="textbox" formControlName="answer">
+                <span class="bar"></span>
+                <label class="texto" for="texto">RESPUESTA</label>
+            </div>
+            <button class="mt-4" type="submit"><small>añadir otra pregunta</small></button>
+        </form>
+    </div>
+</div>

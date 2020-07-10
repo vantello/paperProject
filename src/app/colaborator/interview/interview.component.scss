@@ -1,0 +1,25 @@
+@import '../../styles/fonts.scss';
+@import '../../styles/forms.scss';
+
+h2{
+  font-family: $bebas;
+}
+p{
+  font-family: $text-font;
+}
+.textarea{
+  font-family: $text-font;
+}
+button{
+    display:block;
+    width: 64%;
+
+    border: 2px solid black;
+    background-color: white;
+    font-family: $text-font;
+    text-transform: uppercase;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
