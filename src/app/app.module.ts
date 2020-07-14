@@ -12,6 +12,8 @@ import { PersonalComponent } from './colaborator/personal/personal.component';
 import { MusicListComponent } from './colaborator/music-list/music-list.component';
 import { OpinionComponent } from './colaborator/opinion/opinion.component';
 import { InterviewComponent } from './colaborator/interview/interview.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { InterviewComponent } from './colaborator/interview/interview.component'
     PersonalComponent,
     MusicListComponent,
     OpinionComponent,
-    InterviewComponent
+    InterviewComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
