@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-header',

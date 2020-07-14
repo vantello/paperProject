@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-interview',
   templateUrl: './interview.component.html',
@@ -17,6 +18,7 @@ export class InterviewComponent{
   constructor() {}
 
   ngOnInit(): void {
+
   }
 
   submit(){
