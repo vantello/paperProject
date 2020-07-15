@@ -1,0 +1,15 @@
+@import '../styles/fonts.scss';
+@import '../styles/forms.scss';
+
+h2{
+    font-family: $bebas;
+  }
+  p{
+    font-family: $text-font;
+  }
+  #titulo{
+    font-family: $bebas;
+  }
+  #textarea{
+    font-family: $text-font;
+  }

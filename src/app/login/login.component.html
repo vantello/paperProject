@@ -3,18 +3,18 @@
         <div class="col"></div>
         <div class="col">
             <form action="" class="ml-3">
-                <div class="group">
-                    <input type="text" id="user" required>
+                <div class="group mt-5">
+                    <input type="text" id="user" [(ngModel)]="user" name="user" required>
                     <span class="bar"></span>
                     <label class="user" for="user">User</label>
                 </div>
                 <div class="group mt-5">
-                    <input type="text" id="password" required>
+                    <input type="password" id="password" [(ngModel)]="password" name="password" required>
                     <span class="bar"></span>
                     <label class="password" for="password">Password</label>
                 </div>
             </form>
-            <button type="button" class="btn btn-primary mt-3">Login</button>
+            <button type="submit" class="btn btn-primary mt-3" (click)="login()">Login</button>
             <button type="button" class="btn btn-primary mt-3 ml-3" [routerLink]="[ '/register' ]">Register</button>
             <p>Recordar la contraseña</p>
         </div>
