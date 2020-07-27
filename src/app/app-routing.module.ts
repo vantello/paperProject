@@ -7,9 +7,13 @@ import { OpinionComponent } from './colaborator/opinion/opinion.component';
 import { MusicListComponent } from './colaborator/music-list/music-list.component';
 import { PersonalComponent } from './colaborator/personal/personal.component';
 import { InterviewComponent } from './colaborator/interview/interview.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
   { path: "header", component: HeaderComponent },
+  { path: "login", component: LoginComponent },
+  { path: "register", component: RegisterComponent },
   { path: "colaborator/house", component: HouseComponent },
   { path: "colaborator/personal", component: PersonalComponent},
   { path: "colaborator/article", component: ArticleComponent},
